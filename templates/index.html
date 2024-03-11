@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ejemplo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .submit-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ingresar Pedidos</h1>
+        <form action="/resultado" method="get">
+            <table>
+                <tr>
+                    <th><label for="maxcarga">Capacidad Máxima de Carga:</label></th>
+                    <td><input type="number" name="maxcarga" id="maxcarga" required></td>
+                </tr>
+                <tr>
+                    <th><label for="pedido_jilotepec">Pedido Jilotepec:</label></th>
+                    <td><input type="number" name="pedido_jilotepec" id="pedido_jilotepec" required></td>
+                </tr>
+                <tr>
+                    <th><label for="pedido_toluca">Pedido Toluca:</label></th>
+                    <td><input type="number" name="pedido_toluca" id="pedido_toluca" required></td>
+                </tr>
+                <tr>
+                    <th><label for="pedido_atlacomulco">Pedido Atlacomulco:</label></th>
+                    <td><input type="number" name="pedido_atlacomulco" id="pedido_atlacomulco" required></td>
+                </tr>
+                <tr>
+                    <th><label for="pedido_guadalajara">Pedido Guadalajara:</label></th>
+                    <td><input type="number" name="pedido_guadalajara" id="pedido_guadalajara" required></td>
+                </tr>
+                <tr>
+                    <th><label for="pedido_monterrey">Pedido Monterrey:</label></th>
+                    <td><input type="number" name="pedido_monterrey" id="pedido_monterrey" required></td>
+                </tr>
+                <tr>
+                    <th><label for="pedido_cancun">Pedido Cancún:</label></th>
+                    <td><input type="number" name="pedido_cancun" id="pedido_cancun" required></td>
+                </tr>
+                <tr>
+                    <th><label for="pedido_morelia">Pedido Morelia:</label></th>
+                    <td><input type="number" name="pedido_morelia" id="pedido_morelia" required></td>
+                </tr>
+                <tr>
+                    <th><label for="pedido_aguascalientes">Pedido Aguascalientes:</label></th>
+                    <td><input type="number" name="pedido_aguascalientes" id="pedido_aguascalientes" required></td>
+                </tr>
+                <tr>
+                    <th><label for="pedido_queretaro">Pedido Queretaro:</label></th>
+                    <td><input type="number" name="pedido_queretaro" id="pedido_queretaro" required></td>
+                </tr>
+                <tr>
+                    <th><label for="pedido_cdmx">Pedido CDMX:</label></th>
+                    <td><input type="number" name="pedido_cdmx" id="pedido_cdmx" required><br><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Calcular Rutas">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

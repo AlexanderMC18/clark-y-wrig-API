@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 2px solid #555;
+            background-color: #f2f2f2;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th><h1>Rutas Calculadas</h1></th>
+        </tr>
+        <tr>
+            <td><p>Máxima Carga: {{ maxcarga }}</p></td>
+        </tr>
+        <tr>
+            <th>Ruta</th>
+        </tr>
+        {% for ruta in rutas %}
+            <tr>
+                <td>{{ ruta }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
